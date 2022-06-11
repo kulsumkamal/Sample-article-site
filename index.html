@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial_scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="Script.js"></script>
+        <title>Test site</title>
+    </head>
+    <br><br>
+    <video autoplay muted loop id="bgvid">
+        <source src="myvid.mp4" type="video/mp4">
+    </video>
+    <ul id="Navbar">
+        <li class="SideButton">
+            <span>&#8285</span>
+            <div id="SideBar"> 
+                <a id="NavButton">Coronavirus</a>
+                <a id="NavButton">Russia vs Ukraine</a>
+                <a id="NavButton">Cricket</a>
+                <a id="NavButton">Weather</a>
+                <a id="NavButton">Celebrity</a>
+            
+            </div>
+        </li>
+        <li id="NavButton">Home</li>
+        <li id="NavButton">Latest</li>
+        <li id="NavButton">Topics</li>
+        <li id="NavButton">Conspiracies</li>
+        <li id="NavButton" style="float:right;">Contact Us</li>
+        <li id="NavButton" style="float:right;">Subscribe</li>
+        <li id="NavButton" style="float:right;">Sign in</li>
+    </ul>
+    <br><br>
+    <div id="Threat">
+        <p>Getting dizzy? <br>
+         Subscribe to stop the chaos.</p>
+        <button id="subscribe" onclick="stopChaos()">Subscribe Now!</button>
+    </div>
+    <div id="Sub-form" class="modal" hidden>
+        <span onclick="document.getElementById('Sub-form')='none'"></span>
+        <form action="action_page.php" class="form-container">
+            <div id="container">
+            <h2>Subscribe</h2>
+            <label for="email"><b>Email<b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="password"><b>Password<b></label>
+            <input type="text" placeholder="Enter Password" name="password" required>
+
+            <label for="password-rpt"><b>Repeat Password<b></label>
+            <input type="text" placeholder="Confirm Password" name="password-rpt" required>
+            
+            <label>
+                <input type="checkbox" name="remember">Remember me
+            </label>  
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
+            <div class="clrfix">
+                <button id="Cancel" onclick="document.getElementById('Sub-form').style.display='none'">Cancel</button>
+                <button id="Submit" type="submit">Submit</button>
+            </div>
+            </div>
+        </form>
+
+    </div>
+    <div id="Content">
+    <h2>Impending doom: And what must be done about it</h2>
+    <div class="Declaration">
+    <p id="Preamble"><span style="font-style:bold;">Preamble:</span>What if you’re concerned about the environment,
+         but it seems too hard to make a life change? First, ask yourself whether that change is objectively too hard, 
+         or whether it is merely a perception that helps you to manage your suffering and regret. 
+         If there’s a conflict between what we think is right and what we see ourselves doing,
+          the easiest solution is to adjust our attitudes and feel like a good person again. 
+          But if we can be brave enough to try to change our behaviour, accepting what we failed to do before and what we haven’t done yet, 
+          each small step we take can bring ecological and personal benefits.
+    </p>
+    <img src="doom.jpg" alt="destruction.gif" id="doom_image">
+    </div>
+    </div>
+    
+
+
+</html>
