@@ -28,7 +28,7 @@
         <li id="NavButton">Topics</li>
         <li id="NavButton">Conspiracies</li>
         <li id="NavButton" style="float:right;">Contact Us</li>
-        <li id="NavButton" style="float:right;">Subscribe</li>
+        <li id="NavButton" style="float:right;" onclick="stopChaos()">Subscribe</li>
         <li id="NavButton" style="float:right;">Sign in</li>
     </ul>
     <br><br>
@@ -41,22 +41,23 @@
         <span onclick="document.getElementById('Sub-form')='none'"></span>
         <form action="action_page.php" class="form-container">
             <div id="container">
-            <h2>Subscribe</h2>
+            <button id="subbtn" onclick="subscribe()">Subscribe</button>
+            <button id="subbtn" onclick="login()">Sign in</button>
             <label for="email"><b>Email<b></label>
             <input type="text" placeholder="Enter Email" name="email" required>
 
             <label for="password"><b>Password<b></label>
-            <input type="text" placeholder="Enter Password" name="password" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
 
-            <label for="password-rpt"><b>Repeat Password<b></label>
-            <input type="text" placeholder="Confirm Password" name="password-rpt" required>
+            <label for="password-rpt" name="password-rpt"><b>Repeat Password<b></label>
+            <input type="password" placeholder="Confirm Password" name="password-rpt" required>
             
             <label>
                 <input type="checkbox" name="remember">Remember me
             </label>  
             <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
             <div class="clrfix">
-                <button id="Cancel" onclick="document.getElementById('Sub-form').style.display='none'">Cancel</button>
+                <button id="Cancel" onclick="startChaos()">Cancel</button>
                 <button id="Submit" type="submit">Submit</button>
             </div>
             </div>
@@ -66,7 +67,7 @@
     <div id="Content">
     <h2>Impending doom: And what must be done about it</h2>
     <div class="Declaration">
-    <p id="Preamble"><span style="font-style:bold;">Preamble:</span>What if you’re concerned about the environment,
+    <p id="Preamble"><span style="font-style:bold;">Introduction: </span>What if you’re concerned about the environment,
          but it seems too hard to make a life change? First, ask yourself whether that change is objectively too hard, 
          or whether it is merely a perception that helps you to manage your suffering and regret. 
          If there’s a conflict between what we think is right and what we see ourselves doing,
